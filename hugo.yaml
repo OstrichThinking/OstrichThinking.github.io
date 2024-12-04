@@ -1,0 +1,43 @@
+baseURL: https://ostrichthinking.github.io/
+languageCode: en-us
+title: Jude'Log
+theme: ["PaperMod"]
+paginate: 10
+
+
+params:
+  env: production
+  defaultTheme: auto
+  author: Jude
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+
+menu:
+  main:
+    - name: Posts
+      url: /
+      weight: 1
+    - name: Archive
+      url: tags/
+      weight: 2
+    - name: Search
+      url: Search/
+      weight: 3
+    - name: Tags
+      url: tags/
+      weight: 4
+    - name: FAQ
+      url: FAQ/
+      weight: 5
