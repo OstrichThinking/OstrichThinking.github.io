@@ -2,37 +2,23 @@ baseURL: https://ostrichthinking.github.io/
 languageCode: en-us
 title: Jude'Log
 theme: ["PaperMod"]
-paginate: 10
+paginate: 5
 enableEmoji: true
 
-params:
-  env: production
-  defaultTheme: auto
-  author: Jude
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
 
-  defaultTheme: auto
-  disableThemeToggle: true
-  # 文章下的分享按钮
-  ShowShareButtons: false
-  ShowReadingTime: true
-  disableSpecial1stPost: true
-  displayFullLangName: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: true
-  ShowPageNums: true
-  ShowToc: true
-
-  homeInfoParams:
-    Title: "👋 Welcome to Jude's Blog!"
-    Content: >
-      Hi, this is Jude. I'm documenting my learning notes in this blog since 2024.
-
-  socialIcons:
-    - name: github
-      title: View Source on Github
-      url: "https://github.com/OstrichThinking"
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 menu:
   main:
@@ -49,9 +35,125 @@ menu:
       url: tags/
       weight: 4
 
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Jude's learning notes"
+  author: Jude
 
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # necessary for search
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  # comments: false
+  images: ["images/papermod-cover.png"]
+
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
+    imageTitle: my image
+    # imageWidth: 120
+    # imageHeight: 120
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  homeInfoParams:
+    Title: "👋 Welcome to Jude'Log"
+    Content: >
+      Hi, this is Jude. 
+
+      - 👨‍🎓 A PhD student majoring in Computer Science and Technology.
+
+      - 📝 I'm documenting my learning notes in this blog since 2024.
+
+      - 💡 Dream of becoming a writer.
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/OstrichThinking"
+
+  editPost:
+    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # label:
+  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  # text: "Home"
+  # icon: icon.png
+  # iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  assets:
+    disableHLJS: true
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+# privacy:
+#   vimeo:
+#     disabled: false
+#     simple: true
+
+#   twitter:
+#     disabled: false
+#     enableDNT: true
+#     simple: true
+
+#   instagram:
+#     disabled: false
+#     simple: true
+
+#   youtube:
+#     disabled: false
+#     privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true

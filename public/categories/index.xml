@@ -4,6 +4,11 @@
     <title>Categories on Jude&#39;Log</title>
     <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Jude&#39;Log</description>
+    <image>
+      <title>Jude&#39;Log</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- 0.139.3</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />

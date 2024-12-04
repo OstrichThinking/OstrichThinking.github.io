@@ -8,7 +8,7 @@
 <meta name="robots" content="index, follow">
 <title>Jude&#39;Log</title>
 
-<meta name="description" content="">
+<meta name="description" content="Jude&#39;s learning notes">
 <meta name="author" content="Jude">
 <link rel="canonical" href="http://localhost:1313/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
@@ -61,11 +61,14 @@
 </noscript><meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Jude&#39;Log">
   <meta property="og:title" content="Jude&#39;Log">
+  <meta property="og:description" content="Jude&#39;s learning notes">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
+      <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:title" content="Jude&#39;Log">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="Jude&#39;s learning notes">
 
 <script type="application/ld+json">
 {
@@ -73,7 +76,7 @@
   "@type": "Organization",
   "name": "Jude'Log",
   "url": "http://localhost:1313/",
-  "description": "",
+  "description": "Jude's learning notes",
   "logo": "http://localhost:1313/favicon.ico",
   "sameAs": [
       "https://github.com/OstrichThinking"
@@ -84,7 +87,11 @@
 
 <body class="list" id="top">
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -95,6 +102,26 @@
         <div class="logo">
             <a href="http://localhost:1313/" accesskey="h" title="Jude&#39;Log (Alt + H)">Jude&#39;Log</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
@@ -124,10 +151,15 @@
 <main class="main"> 
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>👋 Welcome to Jude&rsquo;s Blog!</h1>
+        <h1>👋 Welcome to Jude&rsquo;Log</h1>
     </header>
     <div class="entry-content">
-        Hi, this is Jude. I&rsquo;m documenting my learning notes in this blog since 2024.
+        <p>Hi, this is Jude.</p>
+<ul>
+<li>👨‍🎓 A PhD student majoring in Computer Science and Technology.</li>
+<li>📝 I&rsquo;m documenting my learning notes in this blog since 2024.</li>
+<li>💡 Dream of becoming a writer.</li>
+</ul>
     </div>
     <footer class="entry-footer">
         <div class="social-icons" >
@@ -143,6 +175,30 @@
 </div>
 
     </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hello World
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你好哇！</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-14 16:14:48 -0800 -0800'>January 14, 2023</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Jude</footer>
+  <a class="entry-link" aria-label="post link to Hello World" href="http://localhost:1313/posts/hello-word-copy-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hello World
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>你好哇！</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-14 16:14:48 -0800 -0800'>January 14, 2023</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Jude</footer>
+  <a class="entry-link" aria-label="post link to Hello World" href="http://localhost:1313/posts/hello-word-copy/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -213,6 +269,18 @@
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>
