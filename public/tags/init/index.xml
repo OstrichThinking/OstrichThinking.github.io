@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Jude&#39;Log</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Jude&#39;Log</description>
+    <title>Init on Jude&#39;Log</title>
+    <link>http://localhost:1313/tags/init/</link>
+    <description>Recent content in Init on Jude&#39;Log</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Jan 2023 16:14:48 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/init/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
       <link>http://localhost:1313/posts/hello-word/</link>

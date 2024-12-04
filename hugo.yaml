@@ -3,7 +3,7 @@ languageCode: en-us
 title: Jude'Log
 theme: ["PaperMod"]
 paginate: 10
-
+enableEmoji: true
 
 params:
   env: production
@@ -11,8 +11,9 @@ params:
   author: Jude
 
   defaultTheme: auto
-  # disableThemeToggle: true
-  ShowShareButtons: true
+  disableThemeToggle: true
+  # 文章下的分享按钮
+  ShowShareButtons: false
   ShowReadingTime: true
   disableSpecial1stPost: true
   displayFullLangName: true
@@ -20,9 +21,18 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
+
+  homeInfoParams:
+    Title: "👋 Welcome to Jude's Blog!"
+    Content: >
+      Hi, this is Jude. I'm documenting my learning notes in this blog since 2024.
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/OstrichThinking"
 
 menu:
   main:
@@ -30,7 +40,7 @@ menu:
       url: /
       weight: 1
     - name: Archive
-      url: /archive
+      url: archives/
       weight: 2
     - name: Search
       url: search/
@@ -38,9 +48,6 @@ menu:
     - name: Tags
       url: tags/
       weight: 4
-    - name: FAQ
-      url: faq/
-      weight: 5
 
 
 outputs:
