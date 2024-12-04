@@ -30,7 +30,7 @@ menu:
       url: /
       weight: 1
     - name: Archive
-      url: archive/
+      url: /archive
       weight: 2
     - name: Search
       url: search/
@@ -41,3 +41,10 @@ menu:
     - name: FAQ
       url: faq/
       weight: 5
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
